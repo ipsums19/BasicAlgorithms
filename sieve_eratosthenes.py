@@ -1,6 +1,6 @@
 import math
 def eral(n):
-    lA = map(lambda x: x+2, range(n-2))
+    lA = map(lambda x: x+2, range(n-1))
     lB = []
     while lA[0] < math.sqrt(n):
         lB.append(lA[0])
