@@ -4,9 +4,8 @@ def eral(n):
     lB = []
     while lA[0] < math.sqrt(lA[len(lA)-1]):
         lB.append(lA[0])
-        c = lA[0]
         for i in lA:
-            if i%c == 0:
+            if i%lB[-1] == 0:
                 lA.remove(i)
     return lB+lA
 
