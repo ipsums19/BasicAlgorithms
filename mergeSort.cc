@@ -51,15 +51,15 @@ void mergeSort(std::vector<int> &v, int i, int j)
         merge(v, i, aux, j);
 }
 
-int main()
-{
-    int n;
-    std::cin >> n;
-    std::vector<int> v(n);
-    for(int i = 0; i < n; ++i)
-        std::cin >> v[i];
-    mergeSort(v, 0, n-1);
-    for(int i = 0; i < n; ++i)
-        std::cout << v[i] <<" ";
-    std::cout << std::endl;
-}
+//int main()
+//{
+    //int n;
+    //std::cin >> n;
+    //std::vector<int> v(n);
+    //for(int i = 0; i < n; ++i)
+        //std::cin >> v[i];
+    //mergeSort(v, 0, n-1);
+    //for(int i = 0; i < n; ++i)
+        //std::cout << v[i] <<" ";
+    //std::cout << std::endl;
+//}
