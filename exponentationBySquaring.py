@@ -11,10 +11,12 @@ def exp2(n, e):
     return n * aux
 
 def exp(n, e):
+    if e < 0: return exp(1./n, -e)
     if e == 0: return 1
     elif e%2==1: return n*exp(n*n, e/2)
     return exp(n*n, e/2)
 
+assert exp(5,-1)==0.2
 assert exp(5,1)==5
 assert exp(5,2)==25
 assert exp(5,3)==125
